@@ -1,7 +1,7 @@
 #!/bin/bash
-tar xf djbdns-1.05.tar.gz
-cd djbdns-1.05/
-mkdir ../library
+mkdir -p library
+tar xf src/djbdns-1.05.tar.gz
+cd src/djbdns-1.05/
 cp \
     gen_allocdefs.h gen_alloc.h stralloc.h stralloc_catb.c stralloc_cat.c \
     stralloc_cats.c stralloc_copy.c stralloc_eady.c stralloc_num.c \
@@ -10,4 +10,5 @@ cp \
     str_diff.c strerr_die.c strerr.h strerr_sys.c str_len.c str_rchr.c \
     str_start.c alloc.h alloc.c alloc_re.c error.c error.h error_str.c \
     buffer_1.c buffer.c buffer_get.c buffer_put.c buffer_write.c buffer_2.c \
-    buffer_copy.c buffer.h buffer_read.c exit.h ../library
+    buffer_copy.c buffer.h buffer_read.c exit.h ../../library
+
