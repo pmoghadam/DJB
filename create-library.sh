@@ -13,4 +13,6 @@ cp \
     buffer_copy.c buffer.h buffer_read.c exit.h ../library
 cd ..
 rm -rf djbdns-1.05
+cd library
+patch < ../patches/errno.patch
 
